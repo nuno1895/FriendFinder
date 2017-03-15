@@ -6,6 +6,8 @@ var bodyParser = require("body-parser");
 var app = express();
 var port = process.env.PORT || 3000;
 
+// Starts the server to begin listening
+// =============================================================
 app.listen(port, function() {
     console.log('Our app is running on http://localhost:' + port);
 });
@@ -28,6 +30,4 @@ require("./app/routing/htmlRoutes")(app);
 
 // Starts the server to begin listening
 // =============================================================
-app.listen(PORT, function() {
-  console.log("App listening on PORT " + PORT);
-});
+
